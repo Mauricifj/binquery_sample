@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/progress_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Material.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_bar"
+            android:layout_marginTop="@dimen/margin_big"
+            android:text="@string/loading_message"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cardbin_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cardbin_header"
+        android:textSize="@dimen/text_extra_big"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cardbin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardbin_header"
+        android:hint="@string/cardbin_hint"
+        android:inputType="number"
+        android:maxLength="6"
+        android:importantForAutofill="no"/>
+
+    <RelativeLayout
+        android:id="@+id/result_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/result_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_header"
+            android:textSize="@dimen/text_extra_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_header"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/status_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_header"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/status_label"
+            android:text="@string/status_placeholder" />
+
+        <TextView
+            android:id="@+id/provider_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status_label"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/provider_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/provider_label"
+            android:text="@string/provider_placeholder" />
+
+        <TextView
+            android:id="@+id/cardtype_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provider_label"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/cardtype_label"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provider"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/cardtype_label"
+            android:text="@string/cardtype_placeholder" />
+
+        <TextView
+            android:id="@+id/foreigncard_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardtype_label"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/foreigncard_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foreigncard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardtype"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/foreigncard_label"
+            android:text="@string/foreigncard_placeholder" />
+
+        <TextView
+            android:id="@+id/corporatecard_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foreigncard_label"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/corporatecard_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/corporatecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foreigncard"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/corporatecard_label"
+            android:text="@string/corporatecard_placeholder" />
+
+        <TextView
+            android:id="@+id/issuer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/corporatecard_label"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/issuer_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/issuer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/corporatecard"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/issuer_label"
+            android:text="@string/issuer_placeholder" />
+
+        <TextView
+            android:id="@+id/issuercode_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issuer_label"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/issuercode_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/issuercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/issuer"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_toEndOf="@id/issuercode_label"
+            android:text="@string/issuercode_placeholder" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/error_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/error_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error_header"
+            android:textSize="@dimen/text_extra_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/error_header"
+            android:layout_centerInParent="true"
+            android:text="@string/error_placeholder" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/query_button"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/query_text" />
+
+</RelativeLayout>

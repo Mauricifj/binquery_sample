@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BIN QUERY SAMPLE</string>
+
+    <!-- HEADERS-->
+    <string name="cardbin_header">Card bin:</string>
+    <string name="result_header">RESULT:</string>
+    <string name="error_header">ERROR:</string>
+
+    <!-- LABEL -->
+    <string name="status_label">Status:</string>
+    <string name="provider_label">Provider:</string>
+    <string name="cardtype_label">CardType:</string>
+    <string name="foreigncard_label">ForeignCard:</string>
+    <string name="corporatecard_label">CorporateCard:</string>
+    <string name="issuer_label">Issuer:</string>
+    <string name="issuercode_label">IssuerCode:</string>
+
+    <!-- PLACEHOLDERS -->
+    <string name="status_placeholder">00</string>
+    <string name="provider_placeholder">VISA</string>
+    <string name="cardtype_placeholder">Multiplo</string>
+    <string name="foreigncard_placeholder">false</string>
+    <string name="corporatecard_placeholder">false</string>
+    <string name="issuer_placeholder">Bradesco</string>
+    <string name="issuercode_placeholder">237</string>
+    <string name="error_placeholder">ERROR MESSAGE</string>
+
+    <!-- GENERAL-->
+    <string name="cardbin_hint">000000</string>
+    <string name="loading_message">Loading…</string>
+    <string name="query_text">QUERY</string>
+
+</resources>
