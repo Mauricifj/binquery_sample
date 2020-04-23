@@ -1,1 +1,1 @@
-"# binquery_sample" 
+# binquery_sample
